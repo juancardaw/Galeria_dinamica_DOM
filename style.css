@@ -1,0 +1,94 @@
+* {
+    --spacing: 25px;
+    --spacing-meno: 15px;
+    --spacing-major: 50px;
+    --padding-5px: 0px 5px;
+    --text-tamaño: 18px;
+    --background-color: #26282a;
+    --background-color-body:#f2f2f2;
+
+}
+
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    background-color: #26282a;
+}
+
+header > section.cabecera_principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px;
+    align-items: center;
+}
+
+header > section > div.cabecera_icono > img{
+    width: 120px;
+    object-fit: cover;
+}
+
+header > section > div.cabecera_buscador {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 15px;
+    background-color: var(--background-color-body);
+}
+
+header > section > div.cabecera_buscador > input {
+    width: 100%;
+    height: 40px;
+    border-radius:20px;
+    background-color: var(--background-color-body);
+    border: var(--background-color-body);
+    font-size: var(--text-tamaño);
+    outline: none;
+}
+
+header > section > div.cabecera_buscador > img {
+    width: 20px;
+    object-fit: cover;
+}
+
+header > section > div.cabecera_buscador > input:hover {
+    cursor: pointer;
+}
+
+header > section > div.cabecera_buscador > img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+header > section > div.cabecera_sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+header > section > div.cabecera_sesion > a > img {
+    object-fit: cover;
+    width: 30px;
+}
+
+header > section > div.cabecera_sesion > a > img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
