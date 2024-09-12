@@ -26,18 +26,119 @@
                 <a href="#">
                     <img src="./assets/carrito.png" alt="Icono de carro">
                 </a>
-            </div>    
+            </div>  
         </section>
-
+    </header>
+    <header class="header_secundario">
         <section class="cabecera_secundaria">
-            <div class="cabecera_secundaria_buscador">
-                
+            <div class="hero">
+                <a href="#">
+                    <img class="cabecera_secundaria_imagen" src="./assets/computer.png" alt="Ordenadores">
+                    <p>Ordenadores JC</p>
+                </a>
+                <a href="#">
+                    <img class="cabecera_secundaria_imagen" src="./assets/get-money.png" alt="Outlet">
+                    <p>Outlet</p>
+                </a>
+                <a href="#">
+                    <img class="cabecera_secundaria_imagen" src="./assets/gift.png" alt="Ofertas especiales">
+                    <p>Descuentos</p>
+                </a>
+                <a href="#">
+                    <img class="cabecera_secundaria_imagen" src="./assets/recycle-sign.png" alt="Reacondicionados">
+                    <p>Reacondicionados</p>
+                </a>
+                <a href="#">
+                    <img class="cabecera_secundaria_imagen" src="./assets/megaphone.png" alt="Lanzamientos y novedades">
+                    <p>Novedades</p>
+                </a>
+                <a href="#">
+                    <img class="cabecera_secundaria_imagen" src="./assets/software-application.png" alt="Servicios">
+                    <p>Asistencia Tecnica</p>
+                </a>
+                <a href="#">
+                    <img class="cabecera_secundaria_imagen" src="./assets/blog.png" alt="Blog">
+                    <p>Blog PCJC</p>
+                </a>
+                <a href="#">
+                    <img class="cabecera_secundaria_imagen" src="./assets/ranking.png" alt="Ranking usuarios">
+                    <p>Ranking de usuarios</p>
+                </a>
             </div>
         </section>
     </header>
     <main>
-        
+        <section class="principal_flitros id="filtros">
+            <h2>Fltros de busqueda</h2>
+            <form id="filtro_formulario">
+                <div>
+                    <label for="rango_precio">Rango de precios</label>
+                    <select id="rango_precio">
+                        <option value="">Todos los precio</option>
+                        <option value="0-300">De 0 a 300€</option>
+                        <option value="301-600">De 300 a 600€</option>
+                        <option value="601-900">De 600 a 900€</option>
+                        <option value="901-1200">De 900 a 1200€</option>
+                        <option value="1201-1800">De 1200 a 1800€</option>
+                        <option value="1801-2300">De 1800 a 2300€</option>
+                        <option value="2301-3000">De 2300 a 3000€</option>
+                        <option value="3000-5000">De 3001 a 5000€</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="rango_marca">Marca:</label>
+                    <select id="rango_marca">
+                        <option value="">Todas las marcas</option>
+                        <option value="MSI">MSI</option>
+                        <option value="Razer">Razer</option>
+                        <option value="Asus">Asus</option>
+                        <option value="Thosiba">Thosiba</option>
+                        <option value="Sony">Sony</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Acer">Acer</option>
+                        <option value="HP">HP</option>
+                        <option value="Huawei">Huawei</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="rango_categorias">Categorias:</label>
+                    <select  id="rango_categorias">
+                        <option value="">Todas las categorias</option>
+                        <option value="Portatiles">Portatiles</option>
+                        <option value="tablets">Tablets</option>
+                        <option value="Sobremesa">Sobremesa</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="rango_procesador">Procesadores:</label> 
+                        <select id="rango_procesador">
+                            <option value="">Todos los procesadores</option>
+                            <option value="Intel">Intel</option>
+                            <option value="AMD">AMD</option>
+                        </select>
+                </div>
+                <div>
+                    <label for="rango_graficas">Graficas:</label>
+                    <select id="rango_graficas">
+                        <option value="">Todas las graficas</option>
+                        <option value="Nvidia">Nvidia</option>
+                        <option value="AMD">AMD</option>
+                        <option value="IntelArc">Intel Arc</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+        <section class="lista_productos" id="lista_productos">
+            <ul id="contenedor_producto">
+
+            </ul>
+        </section>
     </main>
+    <footer>
+        <section class="nav_footer">
+            <div></div>
+        </section>
+    </footer>
     
 </body>
 </html>

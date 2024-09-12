@@ -30,6 +30,8 @@ header {
     background-color: #26282a;
 }
 
+/* HEADER PRINCIPAL */
+
 header > section.cabecera_principal {
     display: flex;
     justify-content: space-between;
@@ -92,3 +94,46 @@ header > section > div.cabecera_sesion > a > img:hover {
     transform: scale(1.2);
 }
 
+/* HEADER SECUNDARIO */
+
+header.header_secundario {
+    background-color: rgb(243, 243, 243);
+    margin: 2% 5%;
+    padding: 2%;
+}
+
+header.header_secundario > section.cabecera_secundaria {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.header_secundario > section.cabecera_secundaria > div.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+header.header_secundario > section.cabecera_secundaria > div.hero > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: var(--spacing-meno);
+    text-align: center;
+}
+
+header.header_secundario > section.cabecera_secundaria > div.hero > a > p {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
+
+header.header_secundario > section.cabecera_secundaria > div.hero > a > img {
+    object-fit: cover;
+    object-position: center;
+    width: 35%;
+}
