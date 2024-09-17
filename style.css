@@ -6,6 +6,7 @@
     --text-tamaño: 18px;
     --background-color: #26282a;
     --background-color-body:#f2f2f2;
+    --background-color-secundary: rgb(243, 243, 243);
 
 }
 
@@ -97,13 +98,13 @@ header > section > div.cabecera_sesion > a > img:hover {
 /* HEADER SECUNDARIO */
 
 header.header_secundario {
-    background-color: rgb(243, 243, 243);
+    background-color: var(--background-color-secundary);
     margin: 2% 5%;
     padding: 2%;
 }
 
 header.header_secundario > section.cabecera_secundaria {
-    background-color: rgb(243, 243, 243);
+    background-color: var(--background-color-secundary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,6 +138,54 @@ header.header_secundario > section.cabecera_secundaria > div.hero > a > img {
     object-position: center;
     width: 35%;
 }
+
+header.header_secundario > section.cabecera_secundaria > div.hero > a:hover {
+    transform:scale(1.2);
+    transition: 0.5s;
+}
+
+
+/* Main */
+/* Main filtros */
+
+main > section.principal_filtros {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    background-color: var(--background-color-secundary);
+    width: 10%;
+    text-align: center;
+    align-items: center;
+}
+
+
+main > section.principal_filtros > form.filtro_formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items:start
+}
+
+main > section.principal_filtros > form.filtro_formulario > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    font-size: var(--text-tamaño);
+}
+
+main > section.principal_filtros > form.filtro_formulario > div > label {
+    font-size: 20px;
+    font-weight:bold;
+}
+
+main > section.principal_filtros > form.filtro_formulario > div > select {
+    font-size: 14px;
+    margin: 5%;
+    width: 140px;
+}
+
 
 
 /* Footer */
@@ -174,7 +223,7 @@ footer > section.nav_footer > div > ul {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 footer > section.nav_footer > div > ul > li{
@@ -189,6 +238,8 @@ footer > section.nav_footer > div > ul > li:hover {
 }
 
 
+/* Footer redes sociales */
+
 footer > section.footer_redsocial {
     display: flex;
     flex-direction: column;
@@ -196,7 +247,17 @@ footer > section.footer_redsocial {
     justify-content: center;
 }
 
-footer > section.footer_redsocial > ul > li > img {
+footer > section.footer_redsocial > ul > li {
+    margin: 10px;
+}
+
+footer > section.footer_redsocial > ul > li:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+footer > section.footer_redsocial > ul > li > a > img {
     object-fit: cover;
     width: 50px;
 }

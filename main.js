@@ -1,0 +1,97 @@
+const productos = [
+    {
+      nombre: 'HP Spectre x360',
+      precio: 1599,
+      marca: 'HP',
+      categoria: 'portatil',
+      procesador: 'Intel Core i7-12700H',
+      grafica: 'Nvidia GeForce RTX 3050 Ti',
+      pantalla: '13.5 pulgadas OLED',
+      vendedor: 'PcComponentes',
+      imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1081/10815586/1813-hp-spectre-x360-14-eu0003ns-intel-core-ultra-7-155h-16gb-1tb-ssd-14-tactil-foto.jpg'
+    },
+    {
+      nombre: 'MacBook Pro 14',
+      precio: 2199,
+      marca: 'Apple',
+      categoria: 'portatil',
+      procesador: 'Apple M1 Pro',
+      grafica: 'Integrada',
+      vendedor: 'PcComponentes',
+      imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1080/10803529/1753-apple-macbook-pro-apple-m3-8-nucleos-16gb-512gb-ssd-gpu-10-nucleos-14-gris-espacial-2c045f09-4a53-48af-9cf3-6c6cf1965516.jpg'
+    },
+    {
+      nombre: 'Dell Precision 3590',
+      precio: 1299,
+      marca: 'Dell',
+      categoria: 'portatil',
+      procesador: 'Intel Core i5-1235U',
+      grafica: 'Intel Iris Xe',
+      vendedor: 'PcComponentes',
+      imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1085/10853191/1562-dell-precision-3590-intel-core-ultra-7-155h-16gb-512gb-ssd-rtx-500-156-27540ddc-d5a8-455f-a967-d729f3972dda.jpg'
+    },
+    {
+      nombre: 'Asus ROG Zephyrus G14',
+      precio: 1899,
+      marca: 'Asus',
+      categoria: 'portatil',
+      procesador: 'AMD Ryzen 9 5900HS',
+      grafica: 'Nvidia GeForce RTX 3060',
+      disponibilidad: 'en stock',
+      vendedor: 'PcComponentes',
+      imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1082/10822020/1563-asus-rog-zephyrus-g14-2024-oled-ga403uv-qs022-amd-ryzen-9-8945hs-32gb-1tb-ssd-rtx-4060-14.jpg'
+    },
+    {
+      nombre: 'Lenovo Legion 5 Pro',
+      precio: 1499,
+      marca: 'Lenovo',
+      categoria: 'portatil',
+      procesador: 'AMD Ryzen 7 5800H',
+      grafica: 'Nvidia GeForce RTX 3070',
+      disponibilidad: 'en stock',
+      vendedor: 'PcComponentes',
+      imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1018/10188907/1142-lenovo-legion-5-15ith6h-intel-core-i7-11800h-16gb-1tb-ssd-rtx3060-156.jpg'
+    },
+    {
+        nombre: 'Samsung Galaxy Book Pro 360',
+        precio: 1399,
+        marca: 'Samsung',
+        categoria: 'portatil',
+        procesador: 'Intel Core i7-1255U',
+        grafica: 'Intel Iris Xe',
+        vendedor: 'PcComponentes',
+        imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1073/10730550/117-samsung-galaxy-book3-360-intel-evo-core-i5-1340p-16gb-512gb-ssd-133-tactil-grafito.jpg'
+      },
+      {
+        nombre: 'Razer Blade 14',
+        precio: 1999,
+        marca: 'Razer',
+        categoria: 'portatil',
+        procesador: 'AMD Ryzen 9 5900HX',
+        grafica: 'Nvidia GeForce RTX 3070',
+        vendedor: 'PcComponentes',
+        imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1081/10811362/1255-razer-blade-14-240hz-amd-ryzen-9-8945hs-32gb-1tb-ssd-rtx-4070-14.jpg'
+      },
+      {
+        nombre: 'MSI GS66 Stealth',
+        precio: 1799,
+        marca: 'MSI',
+        categoria: 'portatil',
+        procesador: 'Intel Core i7-11800H',
+        grafica: 'Nvidia GeForce RTX 3060',
+        vendedor: 'PcComponentes',
+        imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1001/10010926/1209-msi-stealth-gs66-12uh-019es-intel-core-i7-12700h-32gb-1tb-ssd-rtx-3080-156.jpg'
+      },
+      {
+        nombre: 'Huawei MateBook X Pro',
+        precio: 1499,
+        marca: 'Huawei',
+        categoria: 'portatil',
+        procesador: 'Intel Core i5-1135G7',
+        grafica: 'Intel Iris Xe',
+        venderdor: 'PcComponentes',
+        imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1067/10676216/1327-huawei-matebook-d-16-intel-core-i5-12450h-16gb-512gb-ssd-16.jpg'
+      }
+  ];
+
+  
