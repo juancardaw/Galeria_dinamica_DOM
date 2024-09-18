@@ -164,7 +164,6 @@ main > section.principal_filtros > form.filtro_formulario {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    align-items:start
 }
 
 main > section.principal_filtros > form.filtro_formulario > div {
@@ -186,15 +185,35 @@ main > section.principal_filtros > form.filtro_formulario > div > select {
     width: 140px;
 }
 
+/* Main Lista_prodcutos */
+
+main > section.lista_productos > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+main > section.lista_productos > ul > li {
+    text-align: center;
+    border: 1px solid var(--background-color);
+    background-color: var(--background-color-body);
+}
+
+main > section.lista_productos > ul > li > img {
+    width: 60%;
+    object-fit: cover;
+    text-align: center;
+}
 
 
 /* Footer */
 footer {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(2, minmax(auto, auto));
     gap: var(--spacing-major);
     background-color: var(--background-color);
     color: white;
+    
 
 }
 
@@ -264,7 +283,4 @@ footer > section.footer_redsocial > ul > li > a > img {
 
 footer > section.footer_redsocial > ul {
     display: flex;
-    
-
-
 }

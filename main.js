@@ -6,7 +6,6 @@ const productos = [
       categoria: 'portatil',
       procesador: 'Intel Core i7-12700H',
       grafica: 'Nvidia GeForce RTX 3050 Ti',
-      pantalla: '13.5 pulgadas OLED',
       vendedor: 'PcComponentes',
       imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1081/10815586/1813-hp-spectre-x360-14-eu0003ns-intel-core-ultra-7-155h-16gb-1tb-ssd-14-tactil-foto.jpg'
     },
@@ -37,7 +36,6 @@ const productos = [
       categoria: 'portatil',
       procesador: 'AMD Ryzen 9 5900HS',
       grafica: 'Nvidia GeForce RTX 3060',
-      disponibilidad: 'en stock',
       vendedor: 'PcComponentes',
       imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1082/10822020/1563-asus-rog-zephyrus-g14-2024-oled-ga403uv-qs022-amd-ryzen-9-8945hs-32gb-1tb-ssd-rtx-4060-14.jpg'
     },
@@ -48,50 +46,72 @@ const productos = [
       categoria: 'portatil',
       procesador: 'AMD Ryzen 7 5800H',
       grafica: 'Nvidia GeForce RTX 3070',
-      disponibilidad: 'en stock',
       vendedor: 'PcComponentes',
       imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1018/10188907/1142-lenovo-legion-5-15ith6h-intel-core-i7-11800h-16gb-1tb-ssd-rtx3060-156.jpg'
     },
     {
-        nombre: 'Samsung Galaxy Book Pro 360',
-        precio: 1399,
-        marca: 'Samsung',
-        categoria: 'portatil',
-        procesador: 'Intel Core i7-1255U',
-        grafica: 'Intel Iris Xe',
-        vendedor: 'PcComponentes',
-        imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1073/10730550/117-samsung-galaxy-book3-360-intel-evo-core-i5-1340p-16gb-512gb-ssd-133-tactil-grafito.jpg'
-      },
-      {
-        nombre: 'Razer Blade 14',
-        precio: 1999,
-        marca: 'Razer',
-        categoria: 'portatil',
-        procesador: 'AMD Ryzen 9 5900HX',
-        grafica: 'Nvidia GeForce RTX 3070',
-        vendedor: 'PcComponentes',
-        imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1081/10811362/1255-razer-blade-14-240hz-amd-ryzen-9-8945hs-32gb-1tb-ssd-rtx-4070-14.jpg'
-      },
-      {
-        nombre: 'MSI GS66 Stealth',
-        precio: 1799,
-        marca: 'MSI',
-        categoria: 'portatil',
-        procesador: 'Intel Core i7-11800H',
-        grafica: 'Nvidia GeForce RTX 3060',
-        vendedor: 'PcComponentes',
-        imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1001/10010926/1209-msi-stealth-gs66-12uh-019es-intel-core-i7-12700h-32gb-1tb-ssd-rtx-3080-156.jpg'
-      },
-      {
-        nombre: 'Huawei MateBook X Pro',
-        precio: 1499,
-        marca: 'Huawei',
-        categoria: 'portatil',
-        procesador: 'Intel Core i5-1135G7',
-        grafica: 'Intel Iris Xe',
-        venderdor: 'PcComponentes',
-        imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1067/10676216/1327-huawei-matebook-d-16-intel-core-i5-12450h-16gb-512gb-ssd-16.jpg'
-      }
+      nombre: 'Samsung Galaxy Book Pro 360',
+      precio: 1399,
+      marca: 'Samsung',
+      categoria: 'portatil',
+      procesador: 'Intel Core i7-1255U',
+      grafica: 'Intel Iris Xe',
+      vendedor: 'PcComponentes',
+      imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1073/10730550/117-samsung-galaxy-book3-360-intel-evo-core-i5-1340p-16gb-512gb-ssd-133-tactil-grafito.jpg'
+    },
+    {
+      nombre: 'Razer Blade 14',
+      precio: 1999,
+      marca: 'Razer',
+      categoria: 'portatil',
+      procesador: 'AMD Ryzen 9 5900HX',
+      grafica: 'Nvidia GeForce RTX 3070',
+      vendedor: 'PcComponentes',
+      imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1081/10811362/1255-razer-blade-14-240hz-amd-ryzen-9-8945hs-32gb-1tb-ssd-rtx-4070-14.jpg'
+    },
+    {
+      nombre: 'MSI GS66 Stealth',
+      precio: 1799,
+      marca: 'MSI',
+      categoria: 'portatil',
+      procesador: 'Intel Core i7-11800H',
+      grafica: 'Nvidia GeForce RTX 3060',
+      vendedor: 'PcComponentes',
+      imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1001/10010926/1209-msi-stealth-gs66-12uh-019es-intel-core-i7-12700h-32gb-1tb-ssd-rtx-3080-156.jpg'
+    },
+    {
+      nombre: 'Huawei MateBook X Pro',
+      precio: 1499,
+      marca: 'Huawei',
+      categoria: 'portatil',
+      procesador: 'Intel Core i5-1135G7',
+      grafica: 'Intel Iris Xe',
+      vendedor: 'PcComponentes',
+      imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1067/10676216/1327-huawei-matebook-d-16-intel-core-i5-12450h-16gb-512gb-ssd-16.jpg'
+    }
   ];
+
+
+const listaProductos = (productos) => {
+  const productoContenedor = document.getElementById("contenedor_producto");
+  productoContenedor.innerHTML ="";
+
+  productos.forEach(producto => {
+    const cartaProducto = document.createElement("li");
+    cartaProducto.className = "carta_producto";
+    cartaProducto.innerHTML = `
+    <img src="${producto.imagen}" alt="${producto.nombre}">
+    <h2>${producto.nombre}</h2>
+    <p>Marca: ${producto.marca}</p>
+    <p>Procesador: ${producto.procesador}</p>
+    <p>Grafica: ${producto.grafica}</p>
+    <p>Precio: ${producto.precio}</p>
+    <p>Vendedor: ${producto.vendedor}</p>
+    `;
+    productoContenedor.appendChild(cartaProducto);
+  });
+};
+
+listaProductos(productos);
 
   
