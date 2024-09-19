@@ -91,10 +91,12 @@ const productos = [
     }
   ];
 
+// Productos (ya lo tienes)
+// [... Array de productos ...]
 
 const listaProductos = (productos) => {
   const productoContenedor = document.getElementById("contenedor_producto");
-  productoContenedor.innerHTML ="";
+  productoContenedor.innerHTML = "";
 
   productos.forEach(producto => {
     const cartaProducto = document.createElement("li");
@@ -111,21 +113,29 @@ const listaProductos = (productos) => {
     `;
     productoContenedor.appendChild(cartaProducto);
   });
-}
+};
 
 listaProductos(productos);
 
+// Función para buscar productos por nombre en el buscador
+const buscarProductos = () => {
+  const terminoBusqueda = document.getElementById("buscador").value.toLowerCase(); // El término de búsqueda
+  const productosFiltrados = productos.filter(producto =>
+    producto.nombre.toLowerCase().includes(terminoBusqueda)
+  );
+  listaProductos(productosFiltrados); // Actualiza la lista de productos
+};
 
-
+// Filtros de búsqueda avanzada (rango de precio, marca, etc.)
 function filtroProducto() {
   const rangoPrecio = document.getElementById('rango_precio').value;
-  const [minPrecio, maxPrecio] = rangoPrecio ? rangoPrecio.split('-').map(Number):[0,Infinity];
+  const [minPrecio, maxPrecio] = rangoPrecio ? rangoPrecio.split('-').map(Number) : [0, Infinity];
   const marca = document.getElementById('rango_marca').value;
   const categoria = document.getElementById('rango_categorias').value;
   const procesador = document.getElementById('rango_procesador').value;
   const grafica = document.getElementById('rango_graficas').value;
 
-  const filtradoProductos = productos.filter(producto => 
+  const filtradoProductos = productos.filter(producto =>
     producto.precio >= minPrecio &&
     producto.precio <= maxPrecio &&
     (marca === '' || producto.marca === marca) &&
@@ -134,11 +144,19 @@ function filtroProducto() {
     (grafica === '' || producto.grafica === grafica)
   );
   listaProductos(filtradoProductos);
-};
- 
-  document.getElementById('filtro_boton').addEventListener('click',
-  filtroProducto);
+}
+
+// Evento al hacer clic en el botón de filtros
+document.getElementById('filtro_boton').addEventListener('click', filtroProducto);
 
 
+// Escuchar la tecla "Enter" para ejecutar la búsqueda en el buscador
+document.getElementById("buscador").addEventListener("keyup", function (event) {
+  if (event.key === "Enter") { // Si se presiona Enter
+    buscarProductos(); // Llama a la función de búsqueda
+  }
+});
 
 
+// Hacer clic en la lupa para ejecutar la búsqueda
+document.getElementById("lupa_buscar").addEventListener("click", buscarProductos);
