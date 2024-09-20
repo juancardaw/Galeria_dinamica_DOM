@@ -207,12 +207,14 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-major);
+    width: 100%;
 }
 
 footer .nav_footer {
     display: flex;
     justify-content: space-around;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 footer .nav_footer div {
