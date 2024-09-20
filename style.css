@@ -42,7 +42,7 @@ header {
 
 header > section.cabecera_principal {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
@@ -90,7 +90,6 @@ header > section > div.cabecera_sesion  img {
 header.header_secundario {
     background-color: var(--secondary-color);
     padding: var(--spacing);
-    width: 100%;
     box-shadow: var(--box-shadow);
 }
 
@@ -207,7 +206,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-major);
-    width: 100%;
 }
 
 footer .nav_footer {
@@ -215,6 +213,7 @@ footer .nav_footer {
     justify-content: space-around;
     gap: 50px;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 footer .nav_footer div {
@@ -244,6 +243,12 @@ footer .footer_redsocial ul img {
 
 /* Responsive */
 @media (max-width: 768px) {
+    header > section.cabecera_principal {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
     main {
         flex-direction: column;
     }
