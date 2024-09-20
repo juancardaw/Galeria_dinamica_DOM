@@ -106,8 +106,6 @@ const listaProductos = (productos) => {
     <h2>${producto.nombre}</h2>
     <p>Categoria: ${producto.categoria}</p>
     <p>Marca: ${producto.marca}</p>
-    <p>Procesador: ${producto.procesador}</p>
-    <p>Grafica: ${producto.grafica}</p>
     <p>Precio: ${producto.precio}</p>
     <p>Vendedor: ${producto.vendedor}</p>
     `;
@@ -117,14 +115,25 @@ const listaProductos = (productos) => {
 
 listaProductos(productos);
 
+
+
 // Función para buscar productos por nombre en el buscador
 const buscarProductos = () => {
   const terminoBusqueda = document.getElementById("buscador").value.toLowerCase(); // El término de búsqueda
+
   const productosFiltrados = productos.filter(producto =>
-    producto.nombre.toLowerCase().includes(terminoBusqueda)
+    producto.nombre.toLowerCase().includes(terminoBusqueda) ||
+    producto.categoria.toLowerCase().includes(terminoBusqueda) ||
+    producto.marca.toLowerCase().includes(terminoBusqueda) ||
+    producto.procesador.toLowerCase().includes(terminoBusqueda) ||
+    producto.grafica.toLowerCase().includes(terminoBusqueda) ||
+    producto.vendedor.toLowerCase().includes(terminoBusqueda)
   );
+
   listaProductos(productosFiltrados); // Actualiza la lista de productos
 };
+
+
 
 // Filtros de búsqueda avanzada (rango de precio, marca, etc.)
 function filtroProducto() {
@@ -146,8 +155,12 @@ function filtroProducto() {
   listaProductos(filtradoProductos);
 }
 
+
+
 // Evento al hacer clic en el botón de filtros
 document.getElementById('filtro_boton').addEventListener('click', filtroProducto);
+
+
 
 
 // Escuchar la tecla "Enter" para ejecutar la búsqueda en el buscador
@@ -156,6 +169,7 @@ document.getElementById("buscador").addEventListener("keyup", function (event) {
     buscarProductos(); // Llama a la función de búsqueda
   }
 });
+
 
 
 // Hacer clic en la lupa para ejecutar la búsqueda
