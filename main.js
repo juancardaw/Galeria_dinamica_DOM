@@ -6,7 +6,7 @@ const productos = [
       categoria: 'portatil',
       procesador: 'Intel',
       grafica: 'Nvidia',
-      vendedor: 'PcComponentes',
+      vendedor: 'PcJuancar',
       imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1081/10815586/1813-hp-spectre-x360-14-eu0003ns-intel-core-ultra-7-155h-16gb-1tb-ssd-14-tactil-foto.jpg'
     },
     {
@@ -16,7 +16,7 @@ const productos = [
       categoria: 'portatil',
       procesador: 'Apple',
       grafica: 'IntelArc',
-      vendedor: 'PcComponentes',
+      vendedor: 'PcJuancar',
       imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1080/10803529/1753-apple-macbook-pro-apple-m3-8-nucleos-16gb-512gb-ssd-gpu-10-nucleos-14-gris-espacial-2c045f09-4a53-48af-9cf3-6c6cf1965516.jpg'
     },
     {
@@ -26,7 +26,7 @@ const productos = [
       categoria: 'portatil',
       procesador: 'Intel',
       grafica: 'IntelArc',
-      vendedor: 'PcComponentes',
+      vendedor: 'PcJuancar',
       imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1085/10853191/1562-dell-precision-3590-intel-core-ultra-7-155h-16gb-512gb-ssd-rtx-500-156-27540ddc-d5a8-455f-a967-d729f3972dda.jpg'
     },
     {
@@ -36,7 +36,7 @@ const productos = [
       categoria: 'portatil',
       procesador: 'AMD',
       grafica: 'Nvidia',
-      vendedor: 'PcComponentes',
+      vendedor: 'PcJuancar',
       imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1082/10822020/1563-asus-rog-zephyrus-g14-2024-oled-ga403uv-qs022-amd-ryzen-9-8945hs-32gb-1tb-ssd-rtx-4060-14.jpg'
     },
     {
@@ -46,7 +46,7 @@ const productos = [
       categoria: 'portatil',
       procesador: 'AMD',
       grafica: 'Nvidia',
-      vendedor: 'PcComponentes',
+      vendedor: 'PcJuancar',
       imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1018/10188907/1142-lenovo-legion-5-15ith6h-intel-core-i7-11800h-16gb-1tb-ssd-rtx3060-156.jpg'
     },
     {
@@ -56,7 +56,7 @@ const productos = [
       categoria: 'portatil',
       procesador: 'Intel',
       grafica: 'IntelArc',
-      vendedor: 'PcComponentes',
+      vendedor: 'PcJuancar',
       imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1073/10730550/117-samsung-galaxy-book3-360-intel-evo-core-i5-1340p-16gb-512gb-ssd-133-tactil-grafito.jpg'
     },
     {
@@ -66,7 +66,7 @@ const productos = [
       categoria: 'portatil',
       procesador: 'AMD',
       grafica: 'Nvidia',
-      vendedor: 'PcComponentes',
+      vendedor: 'PcJuancar',
       imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1081/10811362/1255-razer-blade-14-240hz-amd-ryzen-9-8945hs-32gb-1tb-ssd-rtx-4070-14.jpg'
     },
     {
@@ -76,7 +76,7 @@ const productos = [
       categoria: 'portatil',
       procesador: 'Intel',
       grafica: 'Nvidia',
-      vendedor: 'PcComponentes',
+      vendedor: 'PcJuancar',
       imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1001/10010926/1209-msi-stealth-gs66-12uh-019es-intel-core-i7-12700h-32gb-1tb-ssd-rtx-3080-156.jpg'
     },
     {
@@ -86,7 +86,7 @@ const productos = [
       categoria: 'portatil',
       procesador: 'Intel',
       grafica: 'IntelArc',
-      vendedor: 'PcComponentes',
+      vendedor: 'PcJuancar',
       imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/1067/10676216/1327-huawei-matebook-d-16-intel-core-i5-12450h-16gb-512gb-ssd-16.jpg'
     }
   ];
