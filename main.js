@@ -91,26 +91,34 @@ const productos = [
     }
   ];
 
-// Productos (ya lo tienes)
-// [... Array de productos ...]
 
+
+// funcion que muestra los productos en el main
 const listaProductos = (productos) => {
   const productoContenedor = document.getElementById("contenedor_producto");
   productoContenedor.innerHTML = "";
 
-  productos.forEach(producto => {
-    const cartaProducto = document.createElement("li");
-    cartaProducto.className = "carta_producto";
-    cartaProducto.innerHTML = `
-    <img src="${producto.imagen}" alt="${producto.nombre}">
-    <h2>${producto.nombre}</h2>
-    <p>Categoria: ${producto.categoria}</p>
-    <p>Marca: ${producto.marca}</p>
-    <p>Precio: ${producto.precio}</p>
-    <p>Vendedor: ${producto.vendedor}</p>
-    `;
-    productoContenedor.appendChild(cartaProducto);
-  });
+    if(productos.length === 0) {
+      const mensajeVacio = document.createElement("h1");
+      mensajeVacio.className = "msnVacio";
+      mensajeVacio.textContent = "No se encontro ningun producto";
+      productoContenedor.appendChild(mensajeVacio);
+    } else {
+
+    productos.forEach(producto => {
+      const cartaProducto = document.createElement("li");
+      cartaProducto.className = "carta_producto";
+      cartaProducto.innerHTML = `
+      <img src="${producto.imagen}" alt="${producto.nombre}">
+      <h2>${producto.nombre}</h2>
+      <p>Categoria: ${producto.categoria}</p>
+      <p>Marca: ${producto.marca}</p>
+      <p>Precio: ${producto.precio}</p>
+      <p>Vendedor: ${producto.vendedor}</p>
+      `;
+      productoContenedor.appendChild(cartaProducto);
+    });
+  };
 };
 
 listaProductos(productos);

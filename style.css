@@ -160,6 +160,13 @@ main > section.lista_productos {
     padding: 20px;
 }
 
+main > section.lista_productos h1.msnVacio {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
 main > section.lista_productos ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 columnas en pantallas grandes */
